@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" media="(max-width:600px)" href="./assets/css/mobile.css">
+    <link rel="stylesheet" media="(max-width:800px)" href="./assets/css/ipad.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>6 Javscript Projects for Beginners</title>
+</head>
+
+<body>
+    <div class="container">
+        <section id="todo" class="box">
+            <h1>ToDo list</h1>
+            <form id="addForm">
+                <input type="text" id="text-input" autocomplete="off" value="" onfocus="this.value=''">
+                <input type="Submit" value="Submit" class="sub">
+            </form>
+            <h2>Items</h2>
+            <ul id="items" class="item-list">
+            </ul>
+        </section>
+        <section id="ColorChange">
+            <h2 id="clr-code"></h2>
+            <button id="chng-clr">Change Color</button>
+        </section>
+
+        <section id="counter">
+            <div class="text-counter">
+                <h1>Counter</h1>
+                <textarea id="text-box" col="60" rows="05"></textarea>
+                <h4>You Have Written <span id="count">0</span></h4>
+            </div>
+
+
+            <div class="counter-box">
+                <span id="num">0</span>
+                <div class="buttons">
+                    <i id="plus" class="far fa-plus-square"></i>
+                    <i id="minus" class="far fa-minus-square"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="analogClock">
+            <div class="clock">
+                <div class=" hand hour" data-hour-hand></div>
+                <div class=" hand minute" data-minute-hand></div>
+                <div class=" hand second" data-second-hand></div>
+                <div class="number number1">1</div>
+                <div class="number number2">2</div>
+                <div class="number number3">3</div>
+                <div class="number number4">4</div>
+                <div class="number number5">5</div>
+                <div class="number number6">6</div>
+                <div class="number number7">7</div>
+                <div class="number number8">8</div>
+                <div class="number number9">9</div>
+                <div class="number number10">10</div>
+                <div class="number number11">11</div>
+                <div class="number number12">12</div>
+            </div>
+        </section>
+
+        <section id="randomUser">
+            <img id="img" src="./assets/images/profile-pic.jpg" alt="">
+            <h4>FullName : <span id="firstName"></span> <span id="lastName"></span></h4>
+            <h4>Email : <span id="mail"></span></h4>
+            <h4>Phone number : <span id="phone"></span></h4>
+            <h4>Country : <span id="country"></span></h4>
+            <h4>Age : <span id="age"></span></h4>
+            <button id="generateBtn">Generate User</button>
+        </section>
+
+        <section id="calc">
+            <form class="calc" name="calc" data-tilt>
+                <input class="int" type="text" readonly name="txt">
+                <div class="num-op">
+                    <div class="numbers">
+                        <span class="num" onclick="calc.txt.value += '7' ">7</span>
+                        <span class="num" onclick="calc.txt.value += '8' ">8</span>
+                        <span class="num" onclick="calc.txt.value += '9' ">9</span>
+                        <span class="num" onclick="calc.txt.value += '4' ">4</span>
+                        <span class="num" onclick="calc.txt.value += '5' ">5</span>
+                        <span class="num" onclick="calc.txt.value += '6' ">6</span>
+                        <span class="num" onclick="calc.txt.value += '1' ">1</span>
+                        <span class="num" onclick="calc.txt.value += '2' ">2</span>
+                        <span class="num" onclick="calc.txt.value += '3' ">3</span>
+                        <span class="num" onclick="calc.txt.value += '0' ">0</span>
+                        <span class="num" onclick="calc.txt.value += '00'">00</span>
+                        <span class="num" onclick="calc.txt.value += '.' ">.</span>
+                    </div>
+
+                    <div class="operators">
+                        <span class="num" onclick="calc.txt.value = '' ">C</span>
+                        <span class="num" onclick="calc.txt.value += '/' ">/</span>
+                        <span class="num" onclick="calc.txt.value += '*' ">*</span>
+                        <span class="num" onclick="calc.txt.value += '-' ">-</span>
+                        <span class="num" onclick="calc.txt.value += '+' ">+</span>
+                        <span class="num" onclick="calc.txt.value = eval(calc.txt.value) ">=</span>
+                    </div>
+                </div>
+
+
+            </form>
+        </section>
+    </div>
+
+
+
+
+
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/vanilla-tilt.min.js"></script>
+</body>
+
+</html>

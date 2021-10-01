@@ -1,0 +1,30 @@
+
+section {
+    width: 100% !important;
+}
+
+#todo form input {
+   width: 200px;
+
+}
+
+#todo form .sub {
+    padding: 5px 5px;
+    margin-left: 5px;
+}
+
+.item-list li {
+    font-size: 14px;
+    padding: 5px;
+}
+
+.item-list li button {
+    padding: 5px 10px;
+}
+
+.calc{
+
+    width: 100%;
+    padding: 30px;
+
+}
